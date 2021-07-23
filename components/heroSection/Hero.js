@@ -11,7 +11,7 @@ const Hero = () => {
         </h3>
       </div>
       <div className="min-w-max z-10">
-        <img src="./img/mehul.svg" alt="" />
+        <img className="w-img md:w-full" src="./img/mehul.svg" alt="" />
       </div>
     </div>
   );
