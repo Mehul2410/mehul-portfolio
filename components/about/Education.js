@@ -30,7 +30,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="my-14">
+    <div className="py-10">
       <h2 className="text-5xl font-bold text-center text-fourth">Education</h2>
       {educationData.map((item) => {
         return (
