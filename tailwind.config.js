@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       width: {
         img: "320px",
+        contact: "420px",
         exp: "830px",
       },
       backgroundImage: (theme) => ({
@@ -34,5 +35,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

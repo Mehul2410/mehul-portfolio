@@ -26,7 +26,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="my-14">
+    <div className="py-10">
       <h2 className="text-5xl font-bold text-center text-fourth">Experience</h2>
       {experience.map((item) => {
         return (
