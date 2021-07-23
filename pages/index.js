@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../components/about/About";
-import Contact from "../components/contact/contact";
+import Contact from "../components/contact/Contact";
 import Hero from "../components/heroSection/Hero";
 import Projects from "../components/projects/Projects";
 import Skill from "../components/skills/Skill";
