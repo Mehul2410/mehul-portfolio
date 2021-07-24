@@ -10,12 +10,12 @@ const Hero = () => {
         <h4 className="text-fourth font-extrabold text-3xl">Hi There, I’m</h4>
         <h2 className="text-fourth font-extrabold text-6xl">Mehul Gawhale</h2>
         <h3 className="text-fourth font-extrabold text-5xl">
-          UI/UX Designer & Developer
+          UI/UX Designer & Developer.
         </h3>
       </div>
-      <div className="min-w-max z-10">
+      <div className="min-w-max z-10 m-auto">
         <img
-          className="md:w-img md:mt-10 w-full"
+          className="lg:w-contact sm:w-img  lg:mt-16 w-full"
           src="./img/mehul.svg"
           alt=""
         />

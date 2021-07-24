@@ -61,21 +61,21 @@ const Projects = () => {
           {projects.map((item) => {
             return (
               <div
-                className="bg-white m-auto my-9 p-6  rounded-2xl w-80 border space-y-2 border-fourth "
+                className="bg-white m-auto my-9 p-6  rounded-2xl w-80 md:w-96 border space-y-2 border-fourth "
                 key={item.id}
               >
                 <a href={item.url} target="_blank" rel="noreferrer noopener">
-                  <h2 className="text-center font-bold text-xl text-third hover:text-fourth hover:transition">
+                  <h2 className="text-center font-bold text-xl md:text-2xl text-third hover:text-fourth hover:transition">
                     {item.name}
                   </h2>
                 </a>
-                <p>
-                  <span className="font-medium text-justify ">
+                <p className="md:text-lg">
+                  <span className="font-medium text-justify  ">
                     Description:
                   </span>
                   {item.shortdesc}
                 </p>
-                <ul className="list-disc pl-4">
+                <ul className="list-disc pl-4 md:text-lg">
                   {item.features.map((item) => {
                     return <li key={item}>{item}</li>;
                   })}
