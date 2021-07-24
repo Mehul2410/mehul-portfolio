@@ -52,7 +52,7 @@ const Skill = () => {
     },
   ];
   return (
-    <div className="my-14">
+    <div className="my-14" id="skills">
       <h2 className="text-5xl font-bold text-center text-fourth">Skills</h2>
       <div className="bg-first flex justify-evenly flex-wrap p-11 my-10 rounded-xl">
         {skills.map((item) => {
