@@ -25,7 +25,7 @@ const Education = () => {
         "Mahatma Education Society's Pillai HOC College Of Education And Research",
       university: "Mumbai University",
       grade: "8.1",
-      degree: "Information technology - Persuing",
+      degree: "Information technology - Pursuing",
     },
   ];
 
