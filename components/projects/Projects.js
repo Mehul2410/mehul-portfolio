@@ -61,7 +61,7 @@ const Projects = () => {
           {projects.map((item) => {
             return (
               <div
-                className="bg-white p-6 m-5 rounded-2xl w-80 border space-y-2 border-fourth "
+                className="bg-white m-auto my-9 p-6  rounded-2xl w-80 border space-y-2 border-fourth "
                 key={item.id}
               >
                 <a href={item.url} target="_blank" rel="noreferrer noopener">

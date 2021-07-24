@@ -4,7 +4,7 @@ import Experience from "./Experience";
 
 const About = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-20" id="about">
       <div className="bg-first p-16 mb-10 rounded-3xl flex flex-col justify-center items-center max-w-6xl m-auto">
         <h2 className="text-5xl font-bold text-third">About Me</h2>
         <div className="flex flex-wrap w-full justify-evenly my-16">
