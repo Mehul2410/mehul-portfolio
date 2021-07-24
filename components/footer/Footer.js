@@ -10,9 +10,23 @@ const Footer = () => {
           <p className="text-first">2021</p>
         </div>
         <div className="flex space-x-4 items-center">
-          <img src="./img/mail.svg" alt="" />
-          <img src="./img/linkedin.svg" alt="" />
-          <img src="./img/github.svg" alt="" />
+          <a href="mailto:mehulgawhale123@gmail.com?subject=query&cc=mehulgawhale123@gmail.com">
+            <img src="./img/mail.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mehul-gawhale/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="./img/linkedin.svg" alt="" />
+          </a>
+          <a
+            href="https://github.com/mehul2410"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="./img/github.svg" alt="" />
+          </a>
         </div>
       </div>
     </BasePage>

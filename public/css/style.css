@@ -24,3 +24,14 @@
     background-color: theme("colors.second");
   }
 }
+html {
+  --scrollbarBG: transparent;
+  --thumbBG: transparent;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 70.5%;
+  }
+}

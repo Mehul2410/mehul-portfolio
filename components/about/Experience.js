@@ -51,8 +51,12 @@ const Experience = () => {
               <h3 className="text-xl"> {item.shortdesc} </h3>
               <p className="text-xl font-bold">Projects </p>
               <ul className="list-disc pl-6">
-                {item.project.map((item) => {
-                  return <li className="text-third ">{item}</li>;
+                {item.project.map((items) => {
+                  return (
+                    <li className="text-third " key={items}>
+                      {items}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
