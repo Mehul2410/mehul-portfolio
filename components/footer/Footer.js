@@ -6,6 +6,9 @@ const Footer = () => {
     <BasePage className="bg-fourth py-6 ">
       <div className="flex justify-between">
         <div className="flex space-x-4 items-center">
+          <a href="#home">
+            <img src="./img/icons.svg" alt="logo" />
+          </a>
           <img src="./img/copyright.svg" alt="" />
           <p className="text-first">2021</p>
         </div>
