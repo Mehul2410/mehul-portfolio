@@ -72,7 +72,7 @@ const Contact = () => {
             type="submit"
             placeholder="Send"
             onClick={form}
-            className="bg-fourth  text-first text-lg py-2 rounded-md"
+            className="bg-fourth cursor-pointer text-first text-lg py-2 rounded-md"
           />
         </form>
       </div>
