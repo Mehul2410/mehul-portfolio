@@ -31,7 +31,7 @@ const Header = () => {
       <BasePage className="py-8 fixed top-0 left-0 bg-second w-full z-30">
         <div className="flex justify-between items-center z-10">
           <div className="">
-            <h2 className="font-extrabold text-fourth text-3xl">
+            <h2 className="font-extrabold text-fourth text-3xl md:text-4xl">
               <a href="#home">Mehul Gawhale</a>
             </h2>
           </div>
@@ -53,7 +53,7 @@ const Header = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               onClick={() => setNav(!nav)}
-              className="h-6 w-6 hidden cursor-pointer md:block"
+              className="h-8 w-8 hidden cursor-pointer md:block"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -68,7 +68,7 @@ const Header = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 hidden cursor-pointer md:block"
+              className="h-8 w-8 hidden cursor-pointer md:block"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -85,20 +85,21 @@ const Header = () => {
         </div>
       </BasePage>
       {nav ? (
-        <div className="bg-first w-full h-60 fixed top-24  z-20  flex-col justify-evenly  px-7 rounded-3xl text-center hidden  md:flex ">
+        <div className="bg-first w-full h-96 fixed top-24  z-20  flex-col justify-evenly  px-7 rounded-3xl text-center hidden  md:flex ">
           {navLink.map((item) => {
             return (
-              <div
+              <a
+                href={item.link}
                 key={item.id}
-                className="cursor-pointer py-3 rounded-lg hover:bg-second"
+                className="text-2xl text-fourth font-medium underline"
               >
-                <a
-                  href={item.link}
-                  className="text-xl text-fourth font-medium underline"
+                <div
+                  className="cursor-pointer py-3 rounded-lg hover:bg-second"
+                  onClick={() => setNav(false)}
                 >
                   {item.name}
-                </a>
-              </div>
+                </div>
+              </a>
             );
           })}
         </div>
