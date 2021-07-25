@@ -8,12 +8,13 @@ function MyApp({ Component, pageProps }) {
         <title>
           Mehul | Hi There, I’m Mehul Gawhale UI/UX Designer & Developer
         </title>
+     <meta name="theme-color" content="#DBE2EF" />
         <link
           rel="shortcut icon"
           href="./img/favicon.ico"
           type="image/x-icon"
         />
-        <meta name="theme-color" content="#4285f4" />
+       
         <meta
           name="title"
           content="Hi There, I’m Mehul Gawhale UI/UX Designer & Developer."
