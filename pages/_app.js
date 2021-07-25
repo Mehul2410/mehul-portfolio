@@ -8,12 +8,20 @@ function MyApp({ Component, pageProps }) {
         <title>
           Mehul | Hi There, I’m Mehul Gawhale UI/UX Designer & Developer
         </title>
-        <link rel="shortcut icon" href="./img/icons.svg" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="./img/favicon.ico"
+          type="image/x-icon"
+        />
+        <meta name="theme-color" content="#DBE2EF" />
         <meta
           name="title"
           content="Hi There, I’m Mehul Gawhale UI/UX Designer & Developer."
         />
-        <meta name="description" content="I do things which make me proud." />
+        <meta
+          name="description"
+          content="I follow the path of never giving up to do things which'll make me proud"
+        />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mehul.vercel.app" />
@@ -23,9 +31,9 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:description"
-          content="I do things which make me proud."
+          content="I follow the path of never giving up to do things which'll make me proud"
         />
-        <meta property="og:image" content="./img/icons.svg" />
+        <meta property="og:image" content="./img/favicon.ico" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.mehul.vercel.app" />
@@ -35,9 +43,9 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="twitter:description"
-          content="I do things which make me proud."
+          content="I follow the path of never giving up to do things which'll make me proud"
         />
-        <meta property="twitter:image" content="./img/icons.svg" />
+        <meta property="twitter:image" content="./img/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>

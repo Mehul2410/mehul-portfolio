@@ -31,10 +31,10 @@ const Contact = () => {
         <div className="relative">
           <img src="./img/contact.svg" alt="" className="w-full lg:mb-20" />
           <a
-            className="absolute text-first top-laptop left-8 lg:top-tab lg:left-4 md:text-xl sm:text-lg sm:top-small  text-2xl"
+            className="absolute text-first top-laptop sm:text-lg sm:top-small text-2xl left-8 lg:top-tab lg:left-4"
             href="tel:+917977060652"
           >
-            <p>+91 7977060652</p>
+            <p className="">+91 7977060652</p>
           </a>
           <a
             className="absolute  bottom-28 left-16"
