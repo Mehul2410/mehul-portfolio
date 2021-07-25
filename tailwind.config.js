@@ -32,8 +32,9 @@ module.exports = {
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { max: "639px" },
+      sm: { max: "370px" },
       // => @media (max-width: 639px) { ... }
+      um: { max: "320px" },
     },
 
     extend: {
@@ -46,11 +47,8 @@ module.exports = {
         img: "320px",
         contact: "420px",
         exp: "830px",
+        "small-img": "270px",
       },
-      backgroundImage: (theme) => ({
-        curve: "url('/img/curve.svg')",
-        "hero-img": "url('/img/mehul.svg')",
-      }),
     },
   },
   variants: {
