@@ -54,7 +54,8 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="my-14">
+    <div id="projects">
+      <div className="pt-28"></div>
       <h2 className="text-5xl font-bold text-center text-fourth">Projects</h2>
       <div className="bg-first flex justify-center w-full p-11 my-10 space-y-2 rounded-xl">
         <div className="flex flex-wrap justify-between items-baseline">
