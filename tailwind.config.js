@@ -37,6 +37,11 @@ module.exports = {
     },
 
     extend: {
+      inset: {
+        laptop: "28.5%",
+        tab: "24%",
+        small: "22%",
+      },
       width: {
         img: "320px",
         contact: "420px",

@@ -13,10 +13,7 @@ function MyApp({ Component, pageProps }) {
           name="title"
           content="Hi There, I’m Mehul Gawhale UI/UX Designer & Developer."
         />
-        <meta
-          name="description"
-          content="To do things which will make me proud."
-        />
+        <meta name="description" content="I do things which make me proud." />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mehul.vercel.app" />
@@ -26,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:description"
-          content="To do things which will make me proud."
+          content="I do things which make me proud."
         />
         <meta property="og:image" content="./img/icons.svg" />
 
@@ -38,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="twitter:description"
-          content="To do things which will make me proud."
+          content="I do things which make me proud."
         />
         <meta property="twitter:image" content="./img/icons.svg" />
       </Head>

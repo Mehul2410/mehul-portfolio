@@ -91,10 +91,10 @@ const Header = () => {
               <a
                 href={item.link}
                 key={item.id}
-                className="text-2xl text-fourth font-medium underline"
+                className="text-2xl text-fourth font-medium hover:underline"
               >
                 <div
-                  className="cursor-pointer py-3 rounded-lg hover:bg-second"
+                  className="cursor-pointer py-3 rounded-lg hover:bg-second active:bg-second"
                   onClick={() => setNav(false)}
                 >
                   {item.name}
