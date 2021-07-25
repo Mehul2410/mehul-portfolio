@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
           href="./img/favicon.ico"
           type="image/x-icon"
         />
-        <meta name="theme-color" content="#00ffff" />
+        <meta name="theme-color" content="#4285f4" />
         <meta
           name="title"
           content="Hi There, I’m Mehul Gawhale UI/UX Designer & Developer."
