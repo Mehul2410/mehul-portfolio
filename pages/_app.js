@@ -16,6 +16,10 @@ function MyApp({ Component, pageProps }) {
         />
        
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
           name="title"
           content="Hi There, I’m Mehul Gawhale UI/UX Designer & Developer."
         />

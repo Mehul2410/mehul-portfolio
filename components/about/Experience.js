@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Experience = () => {
   const experience = [
@@ -7,7 +8,7 @@ const Experience = () => {
       year: "( October 2020 - present )",
       name: "Enroot Mumbai",
       url: "https://enrootmumbai.in/",
-      img: "./img/enroot.svg",
+      img: "/img/enroot.svg",
       role: "Joined as a Front end Developer",
       shortdesc:
         "Enroot Mumbai is a Non-Profit Organization solving social issues using tech.",
@@ -18,7 +19,7 @@ const Experience = () => {
       year: "( Feb 2021 - April-2021 )",
       name: "Oye busy",
       url: "https://oyebusy.com/",
-      img: "./img/busy.svg",
+      img: "/img/busy.svg",
       role: "Joined as a Web Developer (Internship)",
       shortdesc: "A startup providing Hassle Free home services.",
       project: ["Oye beauty", "Oye busy"],
@@ -35,7 +36,7 @@ const Experience = () => {
             key={item.id}
           >
             <div className="flex  flex-col justify-center items-center m-auto h-full space-y-2 text-third font-bold">
-              <img className="w-img" src={item.img} />
+              <Image src={item.img} alt={item.name} width={320} height={320} />
               <a
                 className="text-xl  hover:text-fourth hover:transition"
                 href={item.url}
@@ -46,8 +47,10 @@ const Experience = () => {
               </a>
               <p>{item.year}</p>
             </div>
-            <div className="px-16 py-4 space-y-2 w-exp">
-              <h2 className="text-2xl font-extrabold"> {item.role} </h2>
+            <div className="px-16 py-4 space-y-2 text-fourth w-exp">
+              <h2 className="text-2xl font-extrabold text-third">
+                {item.role}
+              </h2>
               <h3 className="text-xl"> {item.shortdesc} </h3>
               <p className="text-xl font-bold">Projects </p>
               <ul className="list-disc pl-6 md:text-lg">

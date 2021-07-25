@@ -30,7 +30,7 @@ const Header = () => {
     <>
       <BasePage className="py-8 fixed top-0 left-0 bg-second w-full z-30">
         <div className="flex justify-between items-center z-10">
-          <div className="">
+          <div>
             <h2 className="font-extrabold text-fourth text-3xl md:text-4xl">
               <a href="#home">Mehul Gawhale</a>
             </h2>
