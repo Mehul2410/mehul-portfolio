@@ -36,7 +36,7 @@ const Experience = () => {
             key={item.id}
           >
             <div className="flex  flex-col justify-center items-center m-auto h-full space-y-2 text-third font-bold">
-              <Image src={item.img} alt={item.name} width={320} height={320} />
+              <Image src={item.img} alt={item.name} width={320} height={130} />
               <a
                 className="text-xl  hover:text-fourth hover:transition"
                 href={item.url}

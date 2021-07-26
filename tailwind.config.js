@@ -32,7 +32,7 @@ module.exports = {
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { max: "370px" },
+      sm: { max: "420px" },
       // => @media (max-width: 639px) { ... }
       um: { max: "320px" },
     },
