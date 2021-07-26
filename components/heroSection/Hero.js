@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div
-      className=" flex flex-wrap justify-between w-full items-center py-44  md:justify-center md:items-center lg:px-20 sm:px-10 um:px-5"
+      className=" flex flex-wrap justify-between w-full items-center pt-48  md:justify-center md:items-center lg:px-20 sm:px-10 um:px-5"
       id="home"
     >
       <div className="max-w-md w-1/2 z-10 md:w-full">
@@ -15,8 +15,8 @@ const Hero = () => {
       </div>
       <div className="min-w-max z-10 m-auto">
         <svg
-          className="lg:w-contact sm:w-img um:w-small-img  lg:mt-16 w-full"
-          height="439"
+          className="lg:w-contact sm:w-img um:w-96 w-full"
+          height="350"
           viewBox="0 0 720 439"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
