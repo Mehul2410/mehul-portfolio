@@ -11,6 +11,7 @@ import BasePage from "../layout/BasePage";
 const index = () => {
   return (
     <BaseLayout>
+      {/* <img className="absolute top-0" src="/img/curve.svg" /> */}
       <BasePage>
         <Hero />
         <About />

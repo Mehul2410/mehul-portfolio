@@ -24,6 +24,7 @@
     background-color: theme("colors.second");
   }
 }
+
 html {
   --scrollbarBG: transparent;
   --thumbBG: transparent;

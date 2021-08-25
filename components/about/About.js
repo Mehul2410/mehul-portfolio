@@ -475,7 +475,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <div className="max-w-lg p-11 flex flex-col justify-center bg-white rounded-3xl ">
+          <div className=" max-w-lg p-11 flex flex-col justify-center bg-white rounded-3xl ">
             <ul className="text-xl list-disc space-y-5 text-fourth">
               <li>To do things which will make me proud.</li>
               <li>Share my ideas to help others.</li>

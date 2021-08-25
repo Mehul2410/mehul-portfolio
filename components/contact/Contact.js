@@ -1,28 +1,21 @@
 import React from "react";
-import { supabase } from "../../supabase";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const [contact, setContact] = React.useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [emailresponse, setEmailresponse] = React.useState("");
-
-  const form = async () => {
-    if (contact.name && contact.message && contact.email) {
-      const { data, error } = await supabase.from("contactform").insert({
-        name: contact.name,
-        email: contact.email,
-        message: contact.message,
-      });
-      setEmailresponse("Your message has been save will revert asap!");
-      setContact({ name: "", email: "", message: "" });
-    } else {
-      setEmailresponse("Something went wrong !");
+  const ContactForm = async (e) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm(
+        "gmail",
+        "contactTemplate",
+        e.target,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      );
+      await e.target.reset();
+    } catch (error) {
+      console.log(error);
     }
   };
-
   return (
     <div id="contact">
       <div className="pt-28"></div>
@@ -143,46 +136,27 @@ const Contact = () => {
         </div>
         <form
           className="bg-first p-10 w-contact flex flex-col border space-y-2 border-fourth text-fourth rounded-2xl"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => ContactForm(e)}
         >
           <p className="text-fourth animate-pulse text-center">
-            {emailresponse}
+            {/* {emailresponse} */}
           </p>
           <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            value={contact.name}
-            onChange={(e) => setContact({ name: e.target.value })}
-          />
+          <input type="text" name="name" placeholder="Name" />
+
           <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-            value={contact.email}
-            onChange={(e) => setContact({ ...contact, email: e.target.value })}
-          />
+          <input type="email" name="email" placeholder="Email" required />
           <label htmlFor="message">Message:</label>
           <textarea
             type="text"
-            id="message"
             name="message"
             className="h-44 resize-none"
             placeholder="Message"
-            value={contact.message}
-            onChange={(e) =>
-              setContact({ ...contact, message: e.target.value })
-            }
+            required
           />
           <input
             type="submit"
             placeholder="Send"
-            onClick={form}
             className="bg-fourth cursor-pointer text-first text-lg py-2 rounded-md"
           />
         </form>
