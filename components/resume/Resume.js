@@ -557,7 +557,7 @@ const Resume = () => {
           </h2>
 
           <a
-            href="https://drive.google.com/file/d/1UlekddEqAa6cAJLuQyyOpiILZ5DUtycF/view?usp=sharing"
+            href="https://drive.google.com/file/d/1o9iucY2eWSbOdUEU7btGkfEr1mN41NoZ/view?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
           >
